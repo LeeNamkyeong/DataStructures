@@ -1,6 +1,4 @@
-/*
-HW1_2 ÀÌ³²°æ 20180349 Áß¾îÁß±¹ÇĞ°ú 4ÇĞ³â
-*/
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #define MAX_STRING 100
@@ -30,7 +28,7 @@ void push(Stack* s, char word)
 {
 	if (is_full(s))
 	{
-		fprintf(stderr, "½ºÅÃ Æ÷È­ ¿¡·¯\n");
+		fprintf(stderr, "ìŠ¤íƒ í¬í™” ì—ëŸ¬\n");
 		return;
 	}
 	else
@@ -45,7 +43,7 @@ char pop(Stack* s)
 	int temp;
 	if (is_empty(s))
 	{
-		fprintf(stderr, "½ºÅÃ °ø¹é ¿¡·¯\n");
+		fprintf(stderr, "ìŠ¤íƒ ê³µë°± ì—ëŸ¬\n");
 		exit(1);
 	}
 	temp = s->word[s->top];
@@ -80,7 +78,7 @@ int main(void)
 	scanf("%s", word);
 
 	if (palindrome(word))
-		printf("palindrome ÀÔ´Ï´Ù.\n");
+		printf("palindrome ì…ë‹ˆë‹¤.\n");
 	else
-		printf("palindromeÀÌ ¾Æ´Õ´Ï´Ù.\n");
+		printf("palindromeì´ ì•„ë‹™ë‹ˆë‹¤.\n");
 }
